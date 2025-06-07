@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { popularProducts } from "@/datas";
-import React from "react";
+
+import React, { useState } from "react";
+import { Button } from "./ui/button";
 import Rating from "./Rating";
 // import StarRatings from "react-star-ratings";
-
 function Popular() {
+  const [popularProducts, setPopularProducts] = useState<any[]>([])
   return (
     <div className="flex flex-col gap-12 overflow-x-hidden items-center w-full my-4">
       <div className="flex flex-wrap md:gap-4 gap-y-6 gap-2 justify-between">

@@ -1,16 +1,10 @@
-'use client'
-import React from "react";
-import {Swiper, SwiperSlide} from "swiper/react";
-import 'swiper/css'
-import 'swiper/css/autoplay'
-import 'swiper/css/pagination'
-import {Autoplay, Pagination} from 'swiper/modules'
-import { heroDatas } from "@/datas";
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "slick-carousel";
+
 function HeroSection() {
   return <div className="md:px-16 lg:px-36 px-2 w-full">
-    <Swiper
+    <Slider
         modules={[Autoplay, Pagination]}
         direction={"horizontal"}
         spaceBetween={30}
@@ -38,7 +32,7 @@ function HeroSection() {
                 </SwiperSlide>
             ))
         }
-    </Swiper>
+    </Slider>
   </div>;
 }
 

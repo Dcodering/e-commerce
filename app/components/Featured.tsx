@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { FeaturedProducts } from "@/datas";
-import { ArrowUpRight, ArrowUpRightFromCircle } from "lucide-react";
-import React from "react";
+// import { Button } from "@/components/ui/button";
+import { ArrowUpRightFromCircle } from "lucide-react";
+import { useState } from "react";
+import { Button } from "./ui/button";
 
 function Featured() {
+  const [FeaturedProducts, setFeaturedProducts] = useState<any[]>([])
   return (
     <div className="w-full lg:px-16 px-4">
       <div className="w-full items-center flex flex-col">

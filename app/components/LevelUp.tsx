@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import React from "react";
+import { Button } from "./ui/button";
 
 function LevelUp() {
   return <div className="mb-20 w-full md:block hidden md:px-12 lg:px-28 px-4">

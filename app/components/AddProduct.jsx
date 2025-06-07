@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { UploadCloudIcon } from "lucide-react";
-import React from "react";
+import { Button } from "¬/components/ui/button";
+import { Input } from "¬/components/ui/input";
 
 function AddProduct() {
   return (
@@ -75,7 +74,7 @@ function AddProduct() {
         </div>
       </div>
 
-      <Button className='cursor-pointer'> Add Product</Button>
+      <Button className="cursor-pointer"> Add Product</Button>
     </div>
   );
 }
